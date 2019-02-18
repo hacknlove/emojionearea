@@ -3,7 +3,7 @@
  * https://github.com/mervick/emojionearea
  * Copyright Andrey Izman and other contributors
  * Released under the MIT license
- * Date: 2019-02-18T13:45Z
+ * Date: 2019-02-18T13:49Z
  */
 window = ( typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {} );
 document = window.document || {};
@@ -1396,7 +1396,8 @@ document = window.document || {};
             var autocomplete = function() {
                 var textcompleteOptions = {
                     maxCount: options.textcomplete.maxCount,
-                    placement: options.textcomplete.placement
+                    placement: options.textcomplete.placement,
+                    appendTo: options.textComplete.appendTo
                 };
 
                 if (options.shortcuts) {
